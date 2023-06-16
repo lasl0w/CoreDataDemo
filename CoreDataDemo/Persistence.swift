@@ -11,11 +11,13 @@ struct PersistenceController {
     static let shared = PersistenceController()
 
     static var preview: PersistenceController = {
+        // in mem = true, it's not the same as our DB, it's just for the preview
         let result = PersistenceController(inMemory: true)
         let viewContext = result.container.viewContext
         for _ in 0..<10 {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
+            // refactor to Person to make previews work
+            let newItem = Person(context: viewContext)
+            newItem.name = "sam"
         }
         do {
             try viewContext.save()
@@ -33,6 +35,7 @@ struct PersistenceController {
     init(inMemory: Bool = false) {
         container = NSPersistentContainer(name: "CoreDataDemo")
         if inMemory {
+            // if it's true, it's just saving to the dummy data area, not our 
             container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
         }
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
