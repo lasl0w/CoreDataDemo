@@ -2,7 +2,7 @@
 //  Person+CoreDataProperties.swift
 //  CoreDataDemo
 //
-//  Created by tom montgomery on 6/10/23.
+//  Created by tom montgomery on 6/17/23.
 //
 //
 
@@ -16,10 +16,11 @@ extension Person {
         return NSFetchRequest<Person>(entityName: "Person")
     }
 
-    @NSManaged public var name: String?
-    @NSManaged public var gender: String?
     @NSManaged public var age: Int64
-    @NSManaged public var array: NSObject?
+    @NSManaged public var array: [String]?
+    @NSManaged public var gender: String?
+    @NSManaged public var name: String?
+    @NSManaged public var family: Family?
 
 }
 

@@ -13,9 +13,12 @@
 		F10105B82A34F40C00F37E75 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F10105B72A34F40C00F37E75 /* Preview Assets.xcassets */; };
 		F10105BA2A34F40C00F37E75 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10105B92A34F40C00F37E75 /* Persistence.swift */; };
 		F10105BD2A34F40C00F37E75 /* CoreDataDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F10105BB2A34F40C00F37E75 /* CoreDataDemo.xcdatamodeld */; };
-		F10105C52A35052900F37E75 /* Person+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10105C32A35052900F37E75 /* Person+CoreDataClass.swift */; };
-		F10105C62A35052900F37E75 /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10105C42A35052900F37E75 /* Person+CoreDataProperties.swift */; };
 		F10105C82A396B0300F37E75 /* GetCoreDataRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10105C72A396B0300F37E75 /* GetCoreDataRef.swift */; };
+		F10105CE2A3E49D600F37E75 /* Person+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10105CA2A3E49D600F37E75 /* Person+CoreDataClass.swift */; };
+		F10105CF2A3E49D600F37E75 /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10105CB2A3E49D600F37E75 /* Person+CoreDataProperties.swift */; };
+		F10105D02A3E49D600F37E75 /* Family+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10105CC2A3E49D600F37E75 /* Family+CoreDataClass.swift */; };
+		F10105D12A3E49D600F37E75 /* Family+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10105CD2A3E49D600F37E75 /* Family+CoreDataProperties.swift */; };
+		F10105D32A3E4C3500F37E75 /* FamilyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10105D22A3E4C3500F37E75 /* FamilyTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,9 +29,12 @@
 		F10105B72A34F40C00F37E75 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F10105B92A34F40C00F37E75 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		F10105BC2A34F40C00F37E75 /* CoreDataDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataDemo.xcdatamodel; sourceTree = "<group>"; };
-		F10105C32A35052900F37E75 /* Person+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataClass.swift"; sourceTree = "<group>"; };
-		F10105C42A35052900F37E75 /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F10105C72A396B0300F37E75 /* GetCoreDataRef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCoreDataRef.swift; sourceTree = "<group>"; };
+		F10105CA2A3E49D600F37E75 /* Person+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F10105CB2A3E49D600F37E75 /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F10105CC2A3E49D600F37E75 /* Family+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Family+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F10105CD2A3E49D600F37E75 /* Family+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Family+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F10105D22A3E4C3500F37E75 /* FamilyTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +75,7 @@
 				F10105B92A34F40C00F37E75 /* Persistence.swift */,
 				F10105BB2A34F40C00F37E75 /* CoreDataDemo.xcdatamodeld */,
 				F10105B62A34F40C00F37E75 /* Preview Content */,
+				F10105D22A3E4C3500F37E75 /* FamilyTest.swift */,
 			);
 			path = CoreDataDemo;
 			sourceTree = "<group>";
@@ -84,8 +91,10 @@
 		F10105C92A3C0B1600F37E75 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F10105C32A35052900F37E75 /* Person+CoreDataClass.swift */,
-				F10105C42A35052900F37E75 /* Person+CoreDataProperties.swift */,
+				F10105CA2A3E49D600F37E75 /* Person+CoreDataClass.swift */,
+				F10105CB2A3E49D600F37E75 /* Person+CoreDataProperties.swift */,
+				F10105CC2A3E49D600F37E75 /* Family+CoreDataClass.swift */,
+				F10105CD2A3E49D600F37E75 /* Family+CoreDataProperties.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -160,13 +169,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F10105D12A3E49D600F37E75 /* Family+CoreDataProperties.swift in Sources */,
+				F10105CE2A3E49D600F37E75 /* Person+CoreDataClass.swift in Sources */,
+				F10105D02A3E49D600F37E75 /* Family+CoreDataClass.swift in Sources */,
 				F10105BA2A34F40C00F37E75 /* Persistence.swift in Sources */,
+				F10105CF2A3E49D600F37E75 /* Person+CoreDataProperties.swift in Sources */,
 				F10105BD2A34F40C00F37E75 /* CoreDataDemo.xcdatamodeld in Sources */,
-				F10105C62A35052900F37E75 /* Person+CoreDataProperties.swift in Sources */,
-				F10105C52A35052900F37E75 /* Person+CoreDataClass.swift in Sources */,
 				F10105B32A34F40A00F37E75 /* ContentView.swift in Sources */,
 				F10105B12A34F40A00F37E75 /* CoreDataDemoApp.swift in Sources */,
 				F10105C82A396B0300F37E75 /* GetCoreDataRef.swift in Sources */,
+				F10105D32A3E4C3500F37E75 /* FamilyTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
